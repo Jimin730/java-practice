@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Library {
 
-    private ArrayList<Book> books;
-    private ArrayList<Member> members;
+    private ArrayList<Book> books; //도서관에 있는 책
+    private ArrayList<Member> members; //도서관 회원
 
     public Library(){
         books = new ArrayList<>();
@@ -36,7 +36,7 @@ public class Library {
 
         for (Book book : books) {
             if(book.getTitle().equals(bookTitle)){ //책이 있는지 확인
-                if(!book.isRent()) { //책이 대여 중이 아니라면
+                if(!book.isRented()) { //책이 대여 중이 아니라면
                     book.rentBook(); //책의 대여 상태 변경
                     member.addRentBook(book); //회원 대여 목록에 추가
                     return;
@@ -65,7 +65,7 @@ public class Library {
 
         for (Book book : books) {
             if(book.getTitle().equals(bookTitle)){ //책이 존재하고
-                if(book.isRent()){ //현재 대여중이면
+                if(book.isRented()){ //현재 대여중이면
                     book.returnBook();
                     member.returnBook(book); //회원의 대여 목록에서 책 제거
                     return;

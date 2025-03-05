@@ -6,9 +6,9 @@ public class Member {
 
     private int memberId;
     private String name;
-    private ArrayList<Book> rentBooks;
+    private ArrayList<Book> rentBooks; //회원이 빌린 책 목록
 
-    Member(int memberId, String name){
+    public Member(int memberId, String name){
         this.memberId = memberId;
         this.name = name;
         rentBooks = new ArrayList<>();

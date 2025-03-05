@@ -7,6 +7,7 @@ public class App {
         Library lb = new Library();
         Scanner sc = new Scanner(System.in);
 
+        //-- 초기 데이터 여기서 추가 --//
         //회원 추가
         Member member1 = new Member(1, "홍길동");
         lb.addMember(member1);
@@ -17,6 +18,8 @@ public class App {
         lb.addBook(book1);
         lb.addBook(book2);
 
+
+        //--프로그램 실행 부---//
         while (true){
             System.out.println("=====옵션을 선택하세요.=====");
             System.out.println("1. 책 대여");

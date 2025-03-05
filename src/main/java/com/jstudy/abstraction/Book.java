@@ -4,9 +4,9 @@ public class Book {
 
     private String title;
     private String author;
-    private boolean isRent; //대여 현황. 기본 값 false
+    private boolean isRented; //대여 현황. 기본 값 false
 
-    Book(String title, String author){
+    public Book(String title, String author){
         this.title = title;
         this.author = author;
     }
@@ -19,13 +19,13 @@ public class Book {
         return author;
     }
 
-    public boolean isRent() {
-        return isRent;
+    public boolean isRented() {
+        return isRented;
     }
 
     public void rentBook(){ //책 대여 시 상태 변경
-        if(!isRent){
-            isRent = true;
+        if(!isRented){
+            isRented = true;
             System.out.println(title + "가 대여되었습니다.");
         }else {
             System.out.println(title + "는 현재 대여중입니다.");
@@ -33,7 +33,7 @@ public class Book {
     }
 
     public void returnBook(){ //책 반납 시 상태 변경
-        isRent = false;
+        isRented = false;
         System.out.println(title + "가 반납되었습니다.");
     }
 }

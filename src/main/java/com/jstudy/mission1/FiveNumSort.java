@@ -1,4 +1,4 @@
-package com.jstudy.mission;
+package com.jstudy.mission1;
 
 import java.util.Arrays;
 

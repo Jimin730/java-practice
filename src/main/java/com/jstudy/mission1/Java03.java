@@ -1,4 +1,4 @@
-package com.jstudy.mission;
+package com.jstudy.mission1;
 
 public class Java03 {
     public static void main(String[] args) {

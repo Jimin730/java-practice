@@ -1,6 +1,6 @@
 package com.jstudy.mission2.shapeInter;
 
-public class Rectangle implements ShapeImpl {
+public class Rectangle implements Shape {
 
     private String type;
     private int width;

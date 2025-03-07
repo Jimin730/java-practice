@@ -1,6 +1,6 @@
 package com.jstudy.mission2.shape;
 
-public class Rectangle extends ShapeAbstract implements ShapeImpl{
+public class Rectangle extends ShapeAbstract implements Shape {
 
     private String type;
     private int width;

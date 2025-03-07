@@ -6,8 +6,8 @@ public class Application {
 
 
         //인터페이스로 도형 인스턴스 생성
-        ShapeImpl circleInter = new Circle("원",43);
-        ShapeImpl rectangleInter = new Rectangle("사각형", 20, 34);
+        Shape circleInter = new Circle("원",43);
+        Shape rectangleInter = new Rectangle("사각형", 20, 34);
 
         //추상 클래스로는 인스턴스 생성 불가
         Circle circle = new Circle("원", 23);

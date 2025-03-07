@@ -1,6 +1,6 @@
 package com.jstudy.mission2.shapeInter;
 
-public class Circle implements ShapeImpl {
+public class Circle implements Shape {
 
     private String type;
     private int radius;

@@ -1,6 +1,6 @@
 package com.jstudy.mission2.shape;
 
-public class Circle extends ShapeAbstract implements ShapeImpl {
+public class Circle extends ShapeAbstract implements Shape {
 
     private String type;
     private int radius;
